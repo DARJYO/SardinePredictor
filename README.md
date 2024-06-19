@@ -6,9 +6,9 @@ Lets predict the presence of sardines off the coast of Durban, KwaZulu-Natal, So
 ### Step 1: Setting Up the Environment
 First, make sure you have Python installed along with the necessary libraries:
 
-'''
+```
 pip install pandas numpy scikit-learn tkinter
-'''
+```
 
 ### Step 2: Creating the Sardine Prediction Model
 I'll start by creating a simple model. This is a mock-up, assuming DARJYO has historical data that includes features like sea temperature, salinity, and sardine presence.
