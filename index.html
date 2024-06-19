@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sardine Predictor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sardine Predictor Application</h1>
-    <p>This application predicts the presence of sardines off the coast of Durban, KZN, South Africa during July.</p>
-    <h2>Repository</h2>
-    <p>Check out the code on <a href="https://github.com/yourusername/SardinePredictor">GitHub</a>.</p>
-    <h2>Instructions</h2>
-    <p>To use this application, follow the instructions in the repository README.</p>
+    <div class="container">
+        <h1 class="text-center">Sardine Predictor</h1>
+        <form id="sardineForm">
+            <div class="form-group">
+                <label for="temperature">Sea Temperature (°C)</label>
+                <input type="number" class="form-control" id="temperature" placeholder="Enter sea temperature" required>
+            </div>
+            <div class="form-group">
+                <label for="salinity">Salinity (PSU)</label>
+                <input type="number" class="form-control" id="salinity" placeholder="Enter salinity" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="predict.js"></script>
 </body>
 </html>
+
