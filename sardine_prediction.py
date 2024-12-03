@@ -28,3 +28,4 @@ model.fit(X_train, y_train)
 joblib.dump(model, 'sardine_predictor_model.pkl')
 
 print("Model trained and saved successfully.")
+

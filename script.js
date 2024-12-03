@@ -27,3 +27,4 @@ document.getElementById('sardineForm').addEventListener('submit', function(event
         console.error('Error:', error);
     });
 });
+
